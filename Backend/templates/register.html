@@ -1,0 +1,37 @@
+{{define "title"}}Регистрация{{end}}
+
+{{define "content"}}
+	<h1 class="auth__title">Регистрация</h1>
+
+	{{if .Error}}
+		<p class="auth__error">{{.Error}}</p>
+	{{end}}
+
+	<form class="auth__form" method="POST" action="/register" enctype="multipart/form-data">
+		<label>
+			Логин (латиница и цифры, 3–30)
+			<input type="text" name="login" required minlength="3" maxlength="30">
+		</label>
+		<label>
+			Пароль
+			<input type="password" name="password" required minlength="6">
+		</label>
+		<label>
+			ФИО
+			<input type="text" name="fullname" maxlength="100">
+		</label>
+		<label>
+			Email
+			<input type="email" name="email" maxlength="100">
+		</label>
+		<label>
+			Аватар
+			<input type="file" name="avatar" accept="image/*">
+		</label>
+		<button type="submit" class="auth__button">Зарегистрироваться</button>
+	</form>
+
+	<p class="auth__link">
+		Уже есть аккаунт? <a href="/login">Войти</a>
+	</p>
+{{end}}

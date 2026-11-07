@@ -1,0 +1,88 @@
+{{define "title"}}Товары — Админка{{end}}
+
+{{define "content"}}
+<div class="d-flex justify-content-between align-items-center mb-3">
+	<h1 class="h3 mb-0">Товары</h1>
+	<button type="button" class="btn btn-dark" id="btn-new-product">
+		Добавить товар
+	</button>
+</div>
+
+<p class="text-muted" id="counter"></p>
+
+<div class="table-responsive bg-white rounded shadow-sm">
+	<table class="table table-hover align-middle mb-0" id="products-table">
+		<thead class="table-light">
+			<tr>
+				<th style="width:60px;">ID</th>
+				<th style="width:80px;">Превью</th>
+				<th>Название</th>
+				<th>Тип</th>
+				<th>Цвет</th>
+				<th>Категория</th>
+				<th style="width:100px;">Цена</th>
+				<th style="width:160px;">Действия</th>
+			</tr>
+		</thead>
+		<tbody id="products-tbody">
+		</tbody>
+	</table>
+</div>
+
+<div class="modal fade" id="product-modal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form id="product-form">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modal-title">Добавить товар</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+
+					<input type="hidden" name="id" id="form-id">
+
+					<div class="mb-3">
+						<label class="form-label">Название</label>
+						<input type="text" name="name" class="form-control" required maxlength="100">
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label">Путь к картинке</label>
+						<input type="text" name="img" class="form-control" maxlength="255"
+							placeholder="assets/catalog_content/...">
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<label class="form-label">Тип</label>
+							<input type="text" name="type" class="form-control" required maxlength="50">
+						</div>
+						<div class="col-md-6 mb-3">
+							<label class="form-label">Цвет</label>
+							<input type="text" name="color" class="form-control" required maxlength="50">
+						</div>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label">Категории (через запятую)</label>
+						<input type="text" name="category" class="form-control" maxlength="255"
+							placeholder="Мемы,Люди">
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label">Цена (число, 0 = бесплатно)</label>
+						<input type="number" name="price" class="form-control" min="0" required>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+					<button type="submit" class="btn btn-dark">Сохранить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="/js/admin.js" defer></script>
+{{end}}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{block "title" .}}PrimArte{{end}}</title>
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<header class="auth-header">
+		<a href="/">← На главную</a>
+	</header>
+
+	<main class="auth">
+		{{block "content" .}}{{end}}
+	</main>
+</body>
+</html>

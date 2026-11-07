@@ -1,0 +1,61 @@
+{{define "title"}}Профиль{{end}}
+
+{{define "content"}}
+	<h1 class="auth__title">Профиль</h1>
+
+	{{if .Error}}
+		<p class="auth__error">{{.Error}}</p>
+	{{end}}
+
+	{{if .Success}}
+		<p class="auth__success">{{.Success}}</p>
+	{{end}}
+
+	<form class="auth__form" method="POST" action="/profile" enctype="multipart/form-data">
+		<div class="profile__avatar">
+			{{if .User.Avatar}}
+				<img src="{{.User.Avatar}}" alt="Аватар">
+			{{else}}
+				<div class="profile__avatar-placeholder">Нет аватара</div>
+			{{end}}
+		</div>
+
+		<label>
+			Логин (изменить нельзя)
+			<input type="text" value="{{.User.Login}}" disabled>
+		</label>
+
+		<label>
+			ФИО
+			<input type="text" name="fullname" value="{{.User.FullName}}" maxlength="100">
+		</label>
+
+		<label>
+			Email
+			<input type="email" name="email" value="{{.User.Email}}" maxlength="100">
+		</label>
+
+		<label>
+			Новый аватар
+			<input type="file" name="avatar" accept="image/*">
+		</label>
+
+		<label>
+			Новый пароль
+			<input type="password" name="new_password" minlength="6">
+		</label>
+
+		<button type="submit" class="auth__button">Сохранить</button>
+	</form>
+	{{if .User.IsAdmin}}
+		<p class="auth__link">
+			<a href="/admin/products" class="auth__admin-link">
+				Перейти в админ-панель
+			</a>
+		</p>
+	{{end}}
+
+	<p class="auth__link">
+		<a href="/logout">Выйти</a>
+	</p>
+{{end}}

@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS users (
+    user_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    user_login VARCHAR(30) NOT NULL UNIQUE,
+    user_password VARCHAR(60) NOT NULL,
+    user_fullname VARCHAR(100) NOT NULL DEFAULT '',
+    user_email VARCHAR(100) NOT NULL DEFAULT '',
+    user_avatar VARCHAR(255) NOT NULL DEFAULT '',
+    user_hash VARCHAR(64) NOT NULL DEFAULT '',
+    user_created TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
