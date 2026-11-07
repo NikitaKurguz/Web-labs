@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Прайс-лист — PrimArte</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/print.css" id="PrintStyles">
+</head>
+<body>
+	<header class="header">
+		<nav class="header__nav">
+			
+			<a href="index.html">
+				<img src="assets/logo.png" alt="PrimArte" class="header__logo">
+			</a>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="menu-toggle-label" aria-label="Меню">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<ul class="header__menu">
+				<li><a href="catalog.html" class="nav-item">Каталог товаров</a></li>
+				<li><a href="price.html" class="nav-item">Прайс-лист</a></li>
+				<li><a href="contacts.html" class="nav-item">Контакты</a></li>
+				<li><a href="about.html" class="nav-item">О компании</a></li>
+			</ul>
+			
+			<div class="header__auth-group">
+				<a href="#" class="header__auth-btn" data-open="modal-login">Войти</a>
+				<a href="#" class="header__auth-btn" data-open="modal-register">Регистрация</a>
+			</div>
+		</nav>
+		<button type="button" class="print_toggleSwitch" id="printToggle" aria-pressed="false">
+			Версия для слабовидящих
+		</button>
+	</header>
+
+	<main>
+		<section class="page-hero">
+			<h1 class="page-hero__title">Прайс-<span>лист</span></h1>
+			<p class="page-hero__subtitle">Стоимость лицензий на изображения. Цена зависит от типа использования и разрешения файла.</p>
+		</section>
+
+		<section class="price">
+			<ul class="price-table">
+				<li class="price-table__row price-table__row--head">
+					<span class="price-table__cell">Тип лицензии</span>
+					<span class="price-table__cell">Цена</span>
+					<span class="price-table__cell">Коммерческое использование</span>
+				</li>
+				<li class="price-table__row">
+					<span class="price-table__cell price-table__cell--label">Standard</span>
+					<span class="price-table__cell price-table__cell--price" data-label="Цена">490 ₽</span>
+					<span class="price-table__cell price-table__cell--no" data-label="Коммерческое использование">нет</span>
+				</li>
+				<li class="price-table__row price-table__row--highlight">
+					<span class="price-table__cell price-table__cell--label">Extended</span>
+					<span class="price-table__cell price-table__cell--price" data-label="Цена">990 ₽</span>
+					<span class="price-table__cell price-table__cell--yes" data-label="Коммерческое использование">включено</span>
+				</li>
+				<li class="price-table__row">
+					<span class="price-table__cell price-table__cell--label">Exclusive</span>
+					<span class="price-table__cell price-table__cell--price" data-label="Цена">2 490 ₽</span>
+					<span class="price-table__cell price-table__cell--yes" data-label="Коммерческое использование">включено</span>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__inner">
+			<img src="assets/logo.png" alt="PrimArte" class="footer__logo">
+			<ul class="footer__links">
+				<li><a href="catalog.html">Каталог товаров</a></li>
+				<li><a href="price.html">Прайс-лист</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+				<li><a href="about.html">О компании</a></li>
+			</ul>
+			<p class="footer__copy">&copy; 2026 PrimArte</p>
+		</div>
+	</footer>
+	<script src="js/print.js" defer></script>
+	<script src="js/auth-modal.js" defer></script>
+</body>
+</html>

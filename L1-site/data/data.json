@@ -1,0 +1,182 @@
+[
+	{
+		"name": "Мальчик",
+		"type": "Фото",
+		"color": "Цветной",
+		"category": ["Мемы", "Люди"],
+		"price": "До 500",
+		"priceLabel": "150 ₽",
+		"img": "assets/catalog_content/photos/pic5.jpg"
+	},
+	{
+		"name": "Пингвиненок",
+		"type": "PNG/JPG",
+		"color": "Цветной",
+		"category": "Животные",
+		"price": "До 500",
+		"priceLabel": "150 ₽",
+		"img": "assets/catalog_content/pictures/pic2.jpg"
+	},
+	{
+		"name": "Миньон",
+		"type": "PNG/JPG",
+		"color": "Цветной",
+		"category": "Фантастика",
+		"price": "От 2000",
+		"priceLabel": "2 500 ₽",
+		"img": "assets/catalog_content/pictures/pic4.jpg"
+	},
+	{
+		"name": "Девушка с гримасой",
+		"type": "Фото",
+		"color": "Чёрно-белый",
+		"category": "Люди",
+		"price": "Бесплатно",
+		"priceLabel": "0 ₽",
+		"img": "assets/catalog_content/photos/pic6.jpg"
+	},
+	{
+		"name": "Дерево на поляне",
+		"type": "Фото",
+		"color": "Цветной",
+		"category": "Природа",
+		"price": "500–2000",
+		"priceLabel": "700 ₽",
+		"img": "assets/catalog_content/photos/pic7.jpg"
+	},
+	{
+		"name": "Дерево в тумане",
+		"type": "Фото",
+		"color": "Цветной",
+		"category": "Природа",
+		"price": "До 500",
+		"priceLabel": "100 ₽",
+		"img": "assets/catalog_content/photos/pic8.jpg"
+	},
+	{
+		"name": "Сердитый котик",
+		"type": "Фото",
+		"color": "Цветной",
+		"category": ["Мемы", "Животные"],
+		"price": "Бесплатно",
+		"priceLabel": "0 ₽",
+		"img": "assets/catalog_content/photos/pic9.jpg"
+	},
+	{
+		"name": "Мокрая девушка",
+		"type": "GIF",
+		"color": "Цветной",
+		"category": ["Мемы", "Люди"],
+		"price": "Бесплатно",
+		"priceLabel": "0 ₽",
+		"img": "assets/catalog_content/GIF/pic10.gif"
+	},
+	{
+		"name": "Туман в лесу",
+		"type": "GIF",
+		"color": "Цветной",
+		"category": "Природа",
+		"price": "До 500",
+		"priceLabel": "250 ₽",
+		"img": "assets/catalog_content/GIF/pic11.gif"
+	},
+	{
+		"name": "Танцующая девочка",
+		"type": "GIF",
+		"color": "Цветной",
+		"category": ["Люди", "Мемы"],
+		"price": "До 500",
+		"priceLabel": "320 ₽",
+		"img": "assets/catalog_content/GIF/pic12.gif"
+	},
+	{
+		"name": "Неоновая гонщица",
+		"type": "3D",
+		"color": "Цветной",
+		"category": "Фантастика",
+		"price": "500–2000",
+		"priceLabel": "1 500 ₽",
+		"img": "assets/catalog_content/pictures/pic13.jpg"
+	},
+	{
+		"name": "Важная персона",
+		"type": "3D",
+		"color": "Чёрно-белый",
+		"category": "Фантастика",
+		"price": "От 2000",
+		"priceLabel": "2 800 ₽",
+		"img": "assets/catalog_content/pictures/pic14.jpg"
+	},
+	{
+		"name": "Зайчик с рюкзаком",
+		"type": "3D",
+		"color": "Цветной",
+		"category": ["Животные", "Фантастика"],
+		"price": "От 2000",
+		"priceLabel": "2 200 ₽",
+		"img": "assets/catalog_content/pictures/pic15.jpg"
+	},
+	{
+		"name": "Артист",
+		"type": "Фото",
+		"color": "Цветной",
+		"category": "Люди",
+		"price": "500–2000",
+		"priceLabel": "1 800 ₽",
+		"img": "assets/catalog_content/photos/pic16.jpg"
+	},
+	{
+		"name": "Спящая трудяга",
+		"type": "3D",
+		"color": "Цветной",
+		"category": "Люди",
+		"price": "До 500",
+		"priceLabel": "410 ₽",
+		"img": "assets/catalog_content/pictures/pic17.jpg"
+	},
+	{
+		"name": "Моргающий котик",
+		"type": "GIF",
+		"color": "Цветной",
+		"category": "Животные",
+		"price": "500–2000",
+		"priceLabel": "900 ₽",
+		"img": "assets/catalog_content/GIF/pic3.gif"
+	},
+	{
+		"name": "Улыбающаяся девушка",
+		"type": "Фото",
+		"color": "Цветной",
+		"category": "Люди",
+		"price": "До 500",
+		"priceLabel": "215 ₽",
+		"img": "assets/catalog_content/photos/pic18.jpg"
+	},
+	{
+		"name": "День рождения",
+		"type": "PNG/JPG",
+		"color": "Цветной",
+		"category": "Мемы",
+		"price": "До 500",
+		"priceLabel": "150 ₽",
+		"img": "assets/catalog_content/pictures/pic19.jpg"
+	},
+	{
+		"name": "Персонаж из мультика",
+		"type": "PNG/JPG",
+		"color": "Цветной",
+		"category": ["Фантастика", "Мемы"],
+		"price": "До 500",
+		"priceLabel": "200 ₽",
+		"img": "assets/catalog_content/pictures/pic20.jpg"
+	},
+	{
+		"name": "Танцующий котик",
+		"type": "GIF",
+		"color": "Цветной",
+		"category": ["Мемы", "Животные"],
+		"price": "Бесплатно",
+		"priceLabel": "0 ₽",
+		"img": "assets/catalog_content/GIF/pic1.gif"
+	}
+]

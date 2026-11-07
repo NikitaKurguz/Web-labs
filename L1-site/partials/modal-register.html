@@ -1,0 +1,33 @@
+<div class="auth-modal" id="modal-register" hidden>
+	<div class="auth-modal__overlay" data-close></div>
+	<div class="auth-modal__window">
+		<button type="button" class="auth-modal__close" data-close aria-label="Закрыть">✕</button>
+		<h2 class="auth-modal__title">Регистрация</h2>
+		<form class="auth-modal__form" method="POST" action="/register" enctype="multipart/form-data">
+			<label>
+				Логин (латиница и цифры, 3–30)
+				<input type="text" name="login" required minlength="3" maxlength="30">
+			</label>
+			<label>
+				Пароль
+				<input type="password" name="password" required minlength="6">
+			</label>
+			<label>
+				ФИО
+				<input type="text" name="fullname" maxlength="100">
+			</label>
+			<label>
+				Email
+				<input type="email" name="email" maxlength="100">
+			</label>
+			<label>
+				Аватар
+				<input type="file" name="avatar" accept="image/*">
+			</label>
+			<button type="submit" class="auth-modal__submit">Зарегистрироваться</button>
+		</form>
+		<p class="auth-modal__switch">
+			Уже есть аккаунт? <a href="#" data-open="modal-login">Войти</a>
+		</p>
+	</div>
+</div>
